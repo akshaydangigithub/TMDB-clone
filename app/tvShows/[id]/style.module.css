@@ -1,0 +1,297 @@
+.head {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+.head>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.head::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #032541b9;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+}
+
+.info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    z-index: 999;
+    top: 0%;
+    left: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 5vmax;
+}
+
+.image {
+    height: 450px;
+    width: 310px;
+    border-radius: 10px;
+    flex-shrink: 0;
+
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info_right h1 {
+    margin-bottom: 10px;
+}
+
+.info_right h1 span {
+    font-weight: 100;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.info_right p span {
+    position: relative;
+    margin-right: 20px;
+}
+
+.info_right p span::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info_right p span:nth-of-type(1)::before {
+    display: none;
+}
+
+.first_span {
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.progess_section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.progress {
+    height: 60px;
+    width: 60px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    z-index: 9;
+    position: relative;
+
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 105%;
+    height: 100%;
+    border: 3px solid yellow;
+    box-sizing: border-box;
+    border-bottom: none;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.progress:hover {
+    height: 65px;
+    width: 65px;
+    transition: all cubic-bezier(0.23, 1, 0.320, 1) .3s;
+}
+
+.progess_section h4 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.play_trailer_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.dull_p {
+    margin-top: 20px;
+    opacity: .7;
+    font-weight: 100;
+}
+
+.info_right>h2 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.info_right>h3 {
+    font-size: 15px;
+    opacity: .8;
+    word-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.bottom_info_div {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom_info_div h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.bottom_info_div p {
+    opacity: .8;
+    font-size: 13px;
+}
+
+.media {
+    height: 50ch;
+    width: 100%;
+    display: flex;
+    padding-top: 1.3rem;
+}
+
+.media_left {
+    height: 100%;
+    width: 75%;
+    padding-left: 1rem;
+}
+
+.trailer_pics {
+    height: 80%;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.trailer_pics_left {
+    height: 100%;
+    width: 600px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.trailer_pics_left img,
+.trailer_pics_right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trailer_pics_right {
+    height: 100%;
+    width: 400px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.media_right {
+    height: 100%;
+    width: 25%;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.media_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -11%;
+    height: 100%;
+    width: 40px;
+    background: rgb(208, 208, 208);
+    filter: blur(20px);
+}
+
+.icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: 100;
+}
+
+.status,
+.original_language,
+.bugget,
+.revanue,
+.production_companies {
+    margin-top: 20px;
+}
+
+.status p,
+.original_language p,
+.bugget p,
+.revanue p {
+    font-size: 13px;
+}
+
+.status h4,
+.original_language h4,
+.bugget h4,
+.revanue h4 {
+    margin-bottom: 3px;
+}
+
+.production_companies_inner h6 {
+    background-color: rgb(179, 179, 179);
+    padding: 7px;
+    margin-top: 6px;
+    border-radius: 5px;
+    margin-right: 7px;
+    width: fit-content;
+    display: inline-block;
+    font-weight: 600;
+}
